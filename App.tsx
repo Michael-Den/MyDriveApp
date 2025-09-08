@@ -4,7 +4,9 @@ import { StyleSheet, Text, View, Image } from 'react-native';
 export default function App() {
   const age = 22;
   const licenseyears = 0;
+  
   let feedback = '';
+
   
 
   if( age >= 18 )
@@ -19,6 +21,27 @@ export default function App() {
            {
            feedback = 'The roads are still safe.'
            }
+
+  let drivingrank = '';
+  switch  (licenseyears)   {
+    case 0:
+      drivingrank = 'Newbie driver';
+      break;
+    case 1:
+      drivingrank = 'Rookie with 1 year of drivinh experience' ; 
+      break;
+      case 2:
+        drivingrank = 'Intermediate with 2 year of driving experience' ; 
+        break;
+      case 3:
+          drivingrank = 'Experienced driver' ; 
+          break; 
+      case 4:
+            drivingrank = 'Experienced driver' ; 
+            break; 
+            default:
+              drivingrank = 'Veteran driver with many years of experience.'        
+  }    
   
 
           
